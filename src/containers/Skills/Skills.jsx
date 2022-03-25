@@ -6,21 +6,58 @@ import ReactTooltip from 'react-tooltip';
 import './Skills.scss';
 
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
+  // const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
   // console.log(experience);
+  const experiences = [
+    {
+      _createdAt: '2022-03-24T18:07:12Z',
+      _id: '8c00feaa-66d2-4082-b26e-71710d2bbd77',
+      _rev: 'konqSPzeOcgJDWWuiq1Qpu',
+      _type: 'experiences',
+      _updatedAt: '2022-03-24T18:07:12Z',
+      works: [
+        {
+          _key: '5448d520b192',
+          _type: 'workExperience',
+          company: 'Fiverr.',
+          desc: "Currently I'm working as Freelancer in various Online Market Places.",
+          name: 'Jr. Frontend Developer',
+        },
+      ],
+      year: '2022',
+    },
+    {
+      _createdAt: '2022-03-24T18:06:37Z',
+      _id: 'b44a22e8-8685-42fe-83cd-74acf6f378bd',
+      _rev: 'fPSaui3CWkXGhqNMf2AH1q',
+      _type: 'experiences',
+      _updatedAt: '2022-03-24T18:06:37Z',
+      works: [
+        {
+          _key: 'b6adc8d71a11',
+          _type: 'workExperience',
+          company: 'Brilliant Developer',
+          desc: "I've started my Web Development journey as a Jr. Frontend Developer from Brilliant Developer",
+          name: 'Jr. Frontend Developer',
+        },
+      ],
+      year: '2021',
+    },
+  ];
+
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
+    // const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
 
-    client.fetch(query).then(data => {
+    /* client.fetch(query).then(data => {
       setExperiences(data);
       // console.log(data)
-    });
+    }); */
     client.fetch(skillsQuery).then(data => {
       setSkills(data);
     });
-  }, [setExperiences]);
+  }, []);
   return (
     <>
       <h2 className="head-text">
@@ -50,6 +87,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className="app__skills-exp">
+          {console.log(experiences)}
           {experiences.map(experience => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
