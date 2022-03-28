@@ -10,15 +10,15 @@ https://abid-portfolio.netlify.app/
 
 ### `FrontEnd`
 
--ReactJs.-
--Framer-motion.-
--React-tooltip.-
--React Icons.-
--& customized SASS to style the components.-
+1.ReactJs.
+2.Framer-motion.
+3.React-tooltip.
+4.React Icons.
+5.& customized SASS to style the components.
 
 ### `BackEnd`
 
-\*Sanity.io
+1.Sanity.io
 
 **This Project is Inspired by JavaScript Mastery YT.**
 channel Link = https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A
