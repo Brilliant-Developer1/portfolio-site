@@ -18,9 +18,14 @@
     justify-content: flex-start;
     align-items: center;
 
+    a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+
     img{
-        width:130px;
-        height: 25px;
+        width:145px;
+        height: 30px;
 
         @media screen and (min-width: 2000px) {
             width:225px;

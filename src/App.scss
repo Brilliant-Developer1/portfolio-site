@@ -186,3 +186,16 @@
     padding: 2rem;
   }
 }
+@media screen and (min-width:900px){
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient( #e4e4e4, #6b7688);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient( #d1d5ee, #8d95a1);
+}
