@@ -10,10 +10,10 @@ https://abid-portfolio.netlify.app/
 
 ### `FrontEnd`
 
-1.ReactJs.
-2.Framer-motion.
-3.React-tooltip.
-4.React Icons.
+1.ReactJs. <br>
+2.Framer-motion.<br>
+3.React-tooltip.<br>
+4.React Icons.<br>
 5.& customized SASS to style the components.
 
 ### `BackEnd`
