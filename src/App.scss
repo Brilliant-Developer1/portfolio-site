@@ -1,5 +1,38 @@
+.app__loading-screen{
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width:1500px){
+    margin-top: 0px;
+  }
+  @media screen and (max-width:900px){
+    img{
+      width: 70%;
+      height: 70%;
+    }
+  }
+  @media screen and (max-width:450px){
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    p{
+      text-align: center;
+    }
+  }
+  p{
+    font-size: 1.2rem;
+  }
+
+}
 .app {
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
   font-family: var(--font-base);
 }
 

@@ -1,6 +1,6 @@
 # Abid Hassan - Portfolio
 
-This project was created by ReactJS & Sanity.
+This project was created by React JS & Sanity.
 
 ## Live Site Link
 
@@ -11,10 +11,11 @@ https://abid-portfolio.netlify.app/
 ### `FrontEnd`
 
 1. ReactJs. <br>
-2. Framer-motion.<br>
+2. Animation library = Framer-motion.<br>
 3. React-tooltip.<br>
-4. React Icons.<br>
-5. & customized SCSS to style the components.
+4. Icons = React Icons.<br>
+5. CSS BEM Methodology.
+6. & customized SCSS to style the components.
 
 ### `BackEnd`
 
