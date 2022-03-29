@@ -22,10 +22,8 @@ function App() {
   const quote = getRandomQuotes(quotes);
 
   useEffect(() => {
-    setLoading(true);
-
     setTimeout(() => {
-      setLoading(false);
+      setLoading(true);
     }, 8000);
   }, []);
 
@@ -38,24 +36,24 @@ function App() {
         setQuotes(data);
       });
   }, []);
-  console.log(quote);
+
   // console.log(quotes.random());
   const scaleVariants = {
     whileInView: {
       opacity: [0, 1],
       transition: {
-        duration: 0.3,
-        delayChildren: 0.3,
+        duration: 0.2,
+
         ease: 'easeInOut',
       },
     },
   };
   return (
     <div className="app">
-      {loading ? (
+      {!loading ? (
         <motion.div
           whileInView={{ scale: [1, 0] }}
-          transition={{ ease: 'easeOut', delay: [7.8], duration: 0.4 }}
+          transition={{ ease: 'easeOut', delay: [7.8], duration: 0.2 }}
           className="app__loading-screen app__flex"
         >
           <img src={loader} alt="loading..." />
