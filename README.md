@@ -6,7 +6,7 @@ This project was created by React JS & Sanity.
 
 https://abid-portfolio.netlify.app/
 
-## What I'm Using!
+## Build with!
 
 ### `FrontEnd`
 
@@ -14,10 +14,12 @@ https://abid-portfolio.netlify.app/
 2. Animation library = Framer-motion.<br>
 3. React-tooltip.<br>
 4. Icons = React Icons.<br>
-5. CSS BEM Methodology.
+5. CSS BEM Methodology.<br>
 6. & customized SCSS to style the components.
 
 ### `BackEnd`
+
+Repo Link = https://github.com/Brilliant-Developer1/portfolio-server-site
 
 1.Sanity.io
 

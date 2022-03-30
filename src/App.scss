@@ -31,6 +31,27 @@
   }
 
 }
+.quote-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+
+  img {
+    width: 25px;
+    height: 20px;
+    margin: 0 0.3rem 0.5rem 0;
+  }
+
+  .second-quote{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 16px;
+    right: -35px;
+    
+  }
+}
 .app {
   // background-color: var(--primary-color);
   font-family: var(--font-base);

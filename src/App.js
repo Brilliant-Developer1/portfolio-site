@@ -5,6 +5,7 @@ import './App.scss';
 import { Navbar } from './components';
 import { About, Footer, Header, Skills, Testimonial, Work } from './containers';
 import loader from './assets/loading.gif';
+import { images } from './constants';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,7 +25,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 8000);
+    }, 8500);
   }, []);
 
   useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
     whileInView: {
       opacity: [0, 1],
       transition: {
-        duration: 0.2,
+        duration: 0.3,
 
         ease: 'easeInOut',
       },
@@ -53,12 +54,17 @@ function App() {
       {!loading ? (
         <motion.div
           whileInView={{ scale: [1, 0] }}
-          transition={{ ease: 'easeOut', delay: [7.8], duration: 0.2 }}
+          transition={{ ease: 'easeOut', delay: 8.2, duration: 0.3 }}
           className="app__loading-screen app__flex"
         >
           <img src={loader} alt="loading..." />
           <div>
-            <p className="bold-text">{quote?.text}</p>
+            <div className="quote-box">
+              <img src={images.quote} alt="quote1" className="first-quote" />
+              <p className="bold-text">{quote?.text}</p>
+              <img src={images.quote} alt="quote2" className="second-quote" />
+            </div>
+
             <p className="p-text"> - {quote?.author}</p>
           </div>
         </motion.div>

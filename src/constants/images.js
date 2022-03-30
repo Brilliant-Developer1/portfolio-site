@@ -37,6 +37,7 @@ import spotify from '../assets/spotify.png';
 import jslogo from '../assets/jslogo.png';
 import firebase from '../assets/firebase.png';
 import reactlogo from '../assets/reactlogo.png';
+import quote from '../assets/quote.png';
 
 export default {
   email,
@@ -75,4 +76,5 @@ export default {
   jslogo,
   reactlogo,
   firebase,
+  quote,
 };

@@ -183,10 +183,12 @@
         margin-left: 25px;
         object-fit: contain;
         z-index: 1;
-        @media screen and (max-width:450px){
-            margin-top: 25px;
-        }
+        
     }
+    @media screen and (max-width:450px){
+          margin-top: 25px;  
+    }
+    
     .overlay_circle{
         position: absolute;
         left: 0;
