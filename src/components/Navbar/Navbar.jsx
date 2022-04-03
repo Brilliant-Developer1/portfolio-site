@@ -25,6 +25,16 @@ const Navbar = () => {
         )}
       </ul>
 
+      <button type="button" className="resume-button">
+        <a
+          href="https://abid-resume.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+      </button>
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
